@@ -14,10 +14,9 @@
                 window.onscroll = function() {
                   var currentScrollPos = window.pageYOffset;
                   const x = document.getElementsByTagName("nav");
-                  console.log(x)
-                  if (prevScrollpos > currentScrollPos) {
+                  if ((prevScrollpos > currentScrollPos) && (Math.abs(prevScrollpos - currentScrollPos) > 20)) {
                     x[0].style.top="0px";
-                  } else {
+                  } else if (Math.abs(prevScrollpos - currentScrollPos) > 20) {
                     x[0].style.top = "calc(-1 * 15vh)";
                   }
                   prevScrollpos = currentScrollPos;
