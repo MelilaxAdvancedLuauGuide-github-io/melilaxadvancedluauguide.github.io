@@ -9,7 +9,21 @@
         <nav>
             <a href="/" class="homelink"></a>
         </nav>
-        <main>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                  var currentScrollPos = window.pageYOffset;
+                  const x = document.getElementsByTagName("nav");
+                  console.log(x)
+                  if (prevScrollpos > currentScrollPos) {
+                    x[0].style.top="0px";
+                  } else {
+                    x[0].style.top = "calc(-1 * 15vh)";
+                  }
+                  prevScrollpos = currentScrollPos;
+                }
+        </script>
+        <main style="height: 10000px;">
             <span style="margin: auto; display: block; 
             font-size: 75px; text-align: center; padding-left: 5vw; 
             padding-right: 5vw; font-weight: bold;">

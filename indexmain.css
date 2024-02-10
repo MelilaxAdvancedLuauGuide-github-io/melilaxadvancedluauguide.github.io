@@ -6,9 +6,11 @@ nav {
     height: 15vh;
     width: 100vw;
     margin: 0px;
+    top: 0;
     display: block;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: top 0.5s;
 }
 nav .homelink {
 float: left;
