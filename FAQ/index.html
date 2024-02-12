@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Melilax's Advanced Luau Guide!</title>
+        <link rel="icon" href="/images/Headicon.png">
+        <link href="/indexmain.css" rel="stylesheet">
+        <link href="/FAQ/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="homelink"></a>
+            <a href="/FAQ/" class="link">FAQs and Socials</a>
+        </nav>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                  var currentScrollPos = window.pageYOffset;
+                  const x = document.getElementsByTagName("nav");
+                  if ((prevScrollpos > currentScrollPos) && (Math.abs(prevScrollpos - currentScrollPos) > 20)) {
+                    x[0].style.top="0px";
+                  } else if (Math.abs(prevScrollpos - currentScrollPos) > 20) {
+                    x[0].style.top = "calc(-1 * 15vh)";
+                  }
+                  prevScrollpos = currentScrollPos;
+                }
+        </script>
+        <main>
+            <span style="margin: auto; display: block; 
+            font-size: 75px; text-align: center; padding-left: 5vw; 
+            padding-right: 5vw; font-weight: bold;">
+            FAQ / Socials Page
+            </span>
+            <spacer></spacer>
+            <span style="margin: auto; display: block; font-size: 32px; text-align: center; padding: 5vw; font-weight: bold;">
+            -- Frequently Asked questions --
+            </span>
+            <div style="height: 25vh;">
+                <span style="margin: auto; display: block; font-size: 30px; text-align: center; padding: 5vw; padding-bottom: 2vw; font-weight: bold;">
+                What is this website used for?
+                </span>
+                <span style="margin: auto; display: block; font-size: 25px; text-align: center; padding: 5vw; padding-top: 0px; font-weight:600;">
+                This website is used to guide relatively new and somewhat experienced Luau developers in things that might help them!
+                </span>
+            </div>
+            <spacer></spacer>
+            <span style="margin: auto; display: block; font-size: 32px; text-align: center; padding: 5vw; font-weight: bold;">
+                -- Socials --
+            </span>
+            <div style="height: auto; padding-top: 3vh; padding-bottom: 10vh;">
+                <a href="https://discord.gg/bcwGrYJjPP" style="text-align: center; margin: auto; display: block; text-decoration: none; font-size: 32px; text-align: center; font-weight: bold;">
+                Click here to join the Discord
+                </a>
+
+            </div>
+
+        </main>
+    </body>
+</html>
